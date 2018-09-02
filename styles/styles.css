@@ -80,82 +80,10 @@ li {
 	box-shadow: 10px 2px 12px -4px rgba(191,191,191,0.48);
 }
 
-
-/* =================================
- ENVELOP START
-==================================== */
-
-.left,
-.right,
-.wing {
-	display: none;
-}
-
 body {
 	margin:0;
 }
 
-/* heart */
-
-.heart{
-	 position: absolute;
-	 width: 120px;
-	 z-index:99999;
-	 height: 100px;
-	 margin-left:-50px;
-	 left:50%;
-		animation: heart 1s infinite;
-	 transform:scale(.8);
-	 transition:.6s;
-	 margin-top:60px;
-
-}
-.heart:before,
-.heart:after{
-	 content: "";
-	 width: 50px;
-	 height: 80px;
-	 position: absolute;
-	 left: 50px;
-	 top: 0;
-	 border-radius: 50px 50px 6px 6px;
-	 background: crimson;
-	 transform: rotate(-45deg);
-	 transform-origin: 0 100%;
-}
-.heart:after{
-	 left: 0;
-	 transform: rotate(45deg);
-	 transform-origin :100% 100%;
-}
-
-@keyframes heart {
-	 0% {
-			 transform: scale(.8) translate(0,0);
-	 }
-
-	 50% {
-			 transform: scale(.92) translate(0, 12px);
-	 }
-
-	 100% {
-			 transform:scale(.8);
-	 }
-}
-
-/* envelope */
-
- #envelope {
- background: white;
- margin: 100px auto;
- height: 200px;
- position: relative;
- width: 320px;
- border-radius:8px;
- overflow:hidden;
- animation: floaty 1s infinite;
->>>>>>> e07478d81d01e6e5ef78c3419a9b9b58c7f5bb3d
-}
 
 .calendar {
 	width: 100%;
@@ -279,13 +207,6 @@ body {
 	text-decoration: none;
 }
 
-/* ---- Float clearfix ---- */
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
 
 .columna,
 .columnb {
@@ -363,18 +284,6 @@ body {
 		float: right;
   }
 
-  #contact p{
-    width: 80%;
-    text-align: center;
-		font-size: 17px;
-    margin: auto;
-    padding-bottom: 20px;
-  }
-
-	#contact li{
-		font-size: 20px;
-	}
-
 	.photo {
 		display: none;
 	}
@@ -385,26 +294,7 @@ body {
 		margin: auto;
 		margin-top: 20px;
 	}
-/* wings */
 
-.wing {
-	 background:white;
-		border-radius: 12px 20px 60px 20px;
-		width:120px;
-		height:50px; margin-top:80px;
-		position:absolute;
-}
-
-/* right wing */
-
-.right {
-	 margin-left:-60px;
-	 left:50%;
-	 animation:flap1 1s infinite;
-	 border-bottom:3px solid rgba(0,0,0,.08);
-		border-radius: 12px 20px 60px 20px;
-	 transform:rotate(-10deg) translate(250px,0);
-}
 
 @keyframes flap1 {
 	 0% {
